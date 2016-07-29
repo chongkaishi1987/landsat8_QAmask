@@ -6,6 +6,8 @@ I've seen a few scripts out there that read the landsat8 QA band and mask out un
 
 This script lets you specify a list of criteria that you want to make a mask from, and you can specify any combination of them.  Just remember that you are telling the script what to REMOVE From the image.  So entering 'CLOUD_YES' into the criteria list will REMOVE anything that meets the 'CLOUD_YES' criterion.
 
+You'll have to supply your own landsat images to run the demo, since they're too big for github.
+
 # How to use it:
 
 Look in landsat8_QAmask_demo.py
