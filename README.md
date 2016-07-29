@@ -13,10 +13,15 @@ Look in landsat8_QAmask_demo.py
 # Parameter list:
 
 in_qa_band (GDAL Band object): A GDAL band object made from your LANDSAT 8 QA band image.
+
 in_criteria_list (list): A list of criteria that you want to EXCLUDE in your mask.  Valid list of criteria is included at the end of this doc.
+
 in_rows (int): Number of rows in your image.
+
 in_cols (int): Number of cols in your image.
+
 in_geotransform (GDAL Geotransform object): Geographic transformation
+
 out_tiff (string) (output): Output tiff to be created.  It will consist entirely of 1s and 0s so you can multiply it with any other image from the set.  You should probably make sure it ends with '.tif', but you're the boss, man.
 
 # Valid criteria:
