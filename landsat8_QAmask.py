@@ -49,7 +49,6 @@ def memodict(f):
         @return Boolean
     """
 
-    # Memoization decorator for a function taking a single argument
     # This increases speed by factor of TEN.  LUDICROUS SPEED! GO!
     # http://code.activestate.com/recipes/578231-probably-the-fastest-memoization-decorator-in-the-/
 
@@ -70,11 +69,6 @@ def check_criteria(in_tuple):
         @type tuple
         @return Boolean
     """
-
-    # Read the input int (first item in input_tuple) as a string and check the sliced out portion as indicated in the
-    # criterion (second item in input_tuple).  This line is very computationally expensive and is alleviated by the
-    # memodict decorator - it will only be called if a shortcut from the input int directly to the answer doesn't
-    # already exist in memodict.
 
     for criterion in in_tuple[1].split(','):
         if binary_repr(in_tuple[0], 16)[CRITERIA_DICT[criterion][0]:CRITERIA_DICT[criterion][1]] == CRITERIA_DICT[criterion][2]:
